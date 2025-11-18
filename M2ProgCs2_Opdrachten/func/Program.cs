@@ -9,10 +9,25 @@ internal class Program
         Program program = new Program();
         program.Run();
         //iets laten starten of iets door laten gaan
-    }
+    } 
+        string[] vragen = new string[]
+        {
+            "How long do you think you can survive in a zombie apocalipse",
+            "What secret conspiracy would you like to actually start letting other people know?",
+            "If you can still remember, what are your funniest childhood memories?",
+            "What would you do if you won a million dollars?",
+            "What is the worst game you played but that you liked anyway?"
+        };
+    
     internal void Run()
     {
-        Console.WriteLine(Vraag1());
+        string vraag0 = GetVraag(0);
+        Console.WriteLine(vraag0);
+    }
+
+    internal string GetVraag(int vraagIndex)
+    {
+        return vragen[vraagIndex];
     }
     internal string Vraag1()
     {
