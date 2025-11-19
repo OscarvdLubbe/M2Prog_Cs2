@@ -8,17 +8,18 @@ internal class Program
         //ik heb hier een variabel gemaakt die heet program van het typen program.
         Program program = new Program();
         program.Run();
+        program.GetRandomVraag();
         //iets laten starten of iets door laten gaan
-    } 
-        string[] vragen = new string[]
-        {
+    }
+    string[] vragen = new string[]
+    {
             "How long do you think you can survive in a zombie apocalipse",
             "What secret conspiracy would you like to actually start letting other people know?",
             "If you can still remember, what are your funniest childhood memories?",
             "What would you do if you won a million dollars?",
             "What is the worst game you played but that you liked anyway?"
-        };
-    
+    };
+
     internal void Run()
     {
         string vraag0 = GetVraag(0);
@@ -29,6 +30,17 @@ internal class Program
     {
         return vragen[vraagIndex];
     }
+    internal string GetRandomVraag()
+{
+    Random rnd = new Random();
+    int vraagIndex = rnd.Next(vragen.Length);
+
+    Console.WriteLine("Your question is:");
+    Console.WriteLine(vragen[vraagIndex]);
+    Console.ReadLine();
+
+    return vragen[vraagIndex];
+}
     internal string Vraag1()
     {
         Console.WriteLine("How long do you think you can survive in a zombie apocalipse");
