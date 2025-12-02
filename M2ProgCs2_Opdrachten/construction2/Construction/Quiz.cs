@@ -1,18 +1,15 @@
 namespace Construction;
 
 
-class QuizVraag
+class Quiz
 {
-    internal string vraag;
-    internal string antwoord;
+    internal QuizVraag[] vragen;
+    internal QuizVraagAntwoord[] ingevuldAntwoord;
+    
+    internal Quiz(int aantalVragen)
+    {
+        vragen = new QuizVraag[aantalVragen];
+        ingevuldAntwoord = new QuizVraagAntwoord[aantalVragen];
+    }
 
-    internal QuizVraag(string vraag, string antwoord)
-    {
-        this.vraag = vraag;
-        this.antwoord = antwoord;
-    }
-    private void run()
-    {
-        QuizVraag quizVraag = new QuizVraag("","");
-    }
 }

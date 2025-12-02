@@ -4,7 +4,12 @@ namespace Construction;
 class QuizVraagAntwoord
 {
     
-    internal QuizVraag[] vragen;
+    internal QuizVraag vraag;
     internal bool goed;
-    internal QuizVraagAntwoord[] ingevuldAntwoord;
+
+    internal QuizVraagAntwoord(QuizVraag vraag)
+    {
+        this.vraag = vraag;
+        goed = false;
+    }
 }
