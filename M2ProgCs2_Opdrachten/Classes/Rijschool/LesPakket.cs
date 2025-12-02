@@ -1,6 +1,6 @@
 namespace Rijschool;
 
-internal class LesPAKKET
+internal class LesPakket
 {
     internal int urenGekocht;
     internal int urenVerbruikt;

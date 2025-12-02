@@ -1,6 +1,6 @@
 namespace Rijschool;
 
-internal class student
+internal class Student
 {
     internal string naam;
     internal int leeftijd;
