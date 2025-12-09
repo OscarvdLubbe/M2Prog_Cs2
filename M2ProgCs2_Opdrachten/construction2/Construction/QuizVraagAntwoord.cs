@@ -7,9 +7,9 @@ class QuizVraagAntwoord
     internal QuizVraag vraag;
     internal bool goed;
 
-    internal QuizVraagAntwoord(QuizVraag vraag)
+    internal QuizVraagAntwoord(QuizVraag vraag, bool goed)
     {
         this.vraag = vraag;
-        goed = false;
+        this.goed = goed;
     }
 }
