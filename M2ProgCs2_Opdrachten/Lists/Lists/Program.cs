@@ -27,17 +27,23 @@ class Program
 
     };
         List<string> charaterList = new List<string>();
-        
-            for (int i = 0; i < caracters.Length; i++)
-            {
-                charaterList.Add(caracters[i]);
-            }
 
-            for (int i = 0; i < charaterList.Count; i++)
-            {
-                Console.WriteLine(charaterList[i]);
-            }
-        
+        for (int i = 0; i < caracters.Length; i++)
+        {
+            charaterList.Add(caracters[i]);
+        }
+
+        for (int i = 0; i < charaterList.Count; i++)
+        {
+            Console.WriteLine(charaterList[i]);
+        }
+
+        List<double> revieuws = new List<double> { 1.11, 2.22, 3.33 };
+        for (int i = 0; i < revieuws.Count; i++)
+        {
+            Console.WriteLine(revieuws[i]);
+            revieuws.Remove(1.11);
+            revieuws.Remove(2.22);
+        }
     }
-
 }
