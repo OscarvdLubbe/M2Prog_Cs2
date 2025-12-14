@@ -19,4 +19,10 @@ class Quiz
     {
         QuizVraag quizVraag = new QuizVraag("Hoe oud ben jij","Weet ik veel, ik ben jou niet");
     }
+    internal void StelVraag(int index)
+    {
+        QuizVraag vraag = vragen[index];
+        QuizVraagAntwoord quizVraagAntwoord = new QuizVraagAntwoord(vraag);
+        Console.WriteLine(vraag);
+    }
 }
