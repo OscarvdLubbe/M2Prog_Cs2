@@ -59,20 +59,27 @@
 
             for (int i = 0; i < 10; i++)
             {
-                Pickup pickup = new Pickup()
+                Pickup Pickup = new Pickup()
                 {
                     x = i,
                     y = 0
                 };
-                pickups.Add(pickup);
+                pickups.Add(Pickup);
             }
-            foreach (var item in collection)
+            // foreach (Pickup Pickups in pickups)
+            // {
+            //     // if (Pickup.x == 4)
+            //     // {
+            //     //     pickups.Remove(Pickup);
+            //     // }
+            //     // pickups.RemoveAll(Pickup => Pickup.x == 4);
+
+            // };
+            for (int i = pickups.Count - 1; i >= 0; i--)
             {
-                if (pickups[i].x == 4)
-                {
-                    pickups.RemoveAt(i);
-                }
+                
             }
+            Console.ReadKey();
         }
     }
 }
