@@ -43,6 +43,5 @@ namespace dictionaries
                 Console.WriteLine(naam);
             }
         }
-
     }
 }
