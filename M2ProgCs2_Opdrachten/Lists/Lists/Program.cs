@@ -1,4 +1,6 @@
-﻿namespace Lists
+﻿using System.Collections.Generic;
+
+namespace Lists
 {
     class Program
     {

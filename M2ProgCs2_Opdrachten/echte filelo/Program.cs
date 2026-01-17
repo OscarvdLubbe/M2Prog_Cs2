@@ -1,10 +1,9 @@
-﻿namespace Filelo;
+﻿namespace echte_filelo;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Program program = new Program();
         Run();
     }
     static void Run()
