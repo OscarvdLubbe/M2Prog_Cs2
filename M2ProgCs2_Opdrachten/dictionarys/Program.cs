@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace dictionaries
+﻿namespace dictionaries
 {
     class Program
     {
@@ -21,26 +19,23 @@ namespace dictionaries
             Console.WriteLine(pim);
             Console.WriteLine(tim);
 
-            //Dit kan ook gewoon.
             // foreach (KeyValuePair<int, string> item in personeelOpNummer)
             // {
             //     Console.WriteLine(item.Key + ": " + item.Value);
             // }
-            foreach (int key in personeelOpNummer.Keys)
+            foreach (KeyValuePair<int, string> item in personeelOpNummer)
             {
-                int Pn = item.Key;
-                string naam = item.naam;
-                Console.WriteLine($"{Pn}:{naam}");
+                Console.WriteLine();
             }
             foreach (int key in personeelOpNummer.Keys)
             {
                 int Pn = key;
                 Console.WriteLine(Pn);
             }
-            foreach (string Value in personeelOpNummer.Values)
+            foreach (KeyValuePair<int , string> item in personeelOpNummer)
             {
-                string naam = Value;
-                Console.WriteLine(naam);
+                
+                Console.WriteLine(item.Value);
             }
         }
     }
