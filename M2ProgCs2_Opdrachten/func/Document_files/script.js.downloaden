@@ -1,0 +1,27 @@
+    fetch(`formulier.html`)
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById("formulier").innerHTML = data;
+    });
+    
+    function SendForm() {
+        const FullName = document.getElementById("FullName").value;
+        const password = document.getElementById("password").value;
+        const email = document.getElementById("email").value
+        const fav_language = document.querySelector("input[name=fav_language]:checked").value;
+        const voertuig = document.querySelector("input[name=voertuig]:checked").value;
+        const bericht = `name: ${FullName} \n email: ${email}. \n wachtwoord: ${password}`;
+        const mailtoAddress = "oscar1907a@gmail.com";
+        const mailCCAddress = email;
+        const mailSubject = `formulier ingevuld door ${name}`;
+        const mailBody = `beste ${FullName},\n bedankt voor het invullen van mijn formulier. \n ${bericht}`;
+
+        const mailtoLink =`mailTo:${email}?CC=${mailCCAddress}&subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`;
+        window.location.href = mailtoLink;
+
+        // console.log("name "+ FullName);
+        // console.log("password "+ password);
+        // console.log("fav_language "+ fav_language);
+        // console.log("voertuig "+ voertuig);
+        // console.log("bericht "+ bericht);
+    }

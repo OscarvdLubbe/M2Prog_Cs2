@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5501/formulier.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Document_files/css2" rel="stylesheet">
+    <link rel="stylesheet" href="./Document_files/style.css">
+    <script src="./Document_files/script.js.downloaden" defer=""></script>
+</head>
+<body><header class="Header">
+    <h1>M2-SKILL_Dashbord</h1>
+</header>
+<div class="parent">
+    <div class="div1">
+        <section class="sections section1 section1Half">
+            <p>deel 1</p>
+        </section>
+    </div>
+    <div class="div2">
+        <section class="sections section2 section2Half">
+            <p>Formulier</p>
+            <form action="javascript:SendForm();" class="form">
+                <section>
+                    <label for="name">
+                        vul je voor en achternaam in
+                    </label>
+                    <input type="text" name="FullName" id="FullName" placeholder="Vul hier je voornaam en achternaam in">
+                </section>
+                <section>
+                    <label for="password">
+                        Vul hier je Wachtwoord in
+                    </label>
+                    <input type="password" name="password" id="password" placeholder="Vul hier je wachtwoord in">
+                </section>
+                <section>
+                    <label for="email">
+                        Vul hier je email in
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="Vul hier je email in">
+                </section>
+                <section>
+                    <p>Choose your favorite Web language:</p>
+
+
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">HTML</label><br>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">CSS</label><br>
+                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                    <label for="javascript">JavaScript</label>
+                </section>
+                <section>
+                    <p>How many bikes do you have?</p>
+                    <input type="checkbox" id="voertuig1" name="voertuig" value="Bike">
+                    <label for="voertuig0">I have a bike</label><br>
+                    <input type="checkbox" id="voertuig2" name="voertuig" value="Bike">
+                    <label for="voertuig2">I have another bike</label><br>
+                    <input type="checkbox" id="voertuig3" name="voertuig" value="Bike">
+                    <label for="voertuig3">I have another bike</label>
+                </section>
+                <section>
+                    <button type="button" onclick="alert(&#39;peepee poepoe!&#39;)">dont click</button>
+                </section>
+                <section>
+                    <input class="VerzendKnop" type="submit" value="Submit">
+                </section>
+            </form>
+        </section>
+    </div>
+    <div class="div3">
+        <section class="sections section3">
+            <p>deel 3</p>
+        </section>
+    </div>
+</div>
+
+
+
+    <main class="container">
+
+        
+
+    </main>
+    <footer>
+        <p>Van: Oscar van der Lubbe</p>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body><!-- Code injected--></html>

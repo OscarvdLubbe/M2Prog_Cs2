@@ -1,0 +1,79 @@
+body{
+    border: 5px;
+    border-color: rgb(0, 255, 72);
+    background-color: rgb(159, 202, 240);
+    font-size: 1.6rem;
+}
+html{
+    font-size: 62.5%;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: "Oswald", sans-serif;
+}
+
+.Header{
+    margin-top: 4rem;
+}
+/* .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: rgb(11, 168, 16);
+    padding: 2rem;
+    
+} */
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+    
+.div1 {
+    grid-column: span 3 / span 3;
+}
+
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 5 / span 5;
+    grid-column-start: 4;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.sections{
+    
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1rem;
+    border-color: blue;
+    background-color: rgb(12, 151, 35);
+    border: 3px solid rgb(2, 125, 70);
+    flex-basis: calc(50% - 3rem);
+    flex-wrap: wrap;
+    background-color: chartreuse;
+    padding-left: 1rem
+    
+}
+
+/* .form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+} */
+.oswald-sections {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
